@@ -23,6 +23,10 @@
   <!-- Include your sound files -->
   <audio id="sound1" src="sound1.mp3"></audio>
   <audio id="sound2" src="sound2.mp3"></audio>
+  <audio id="sound3" src="sound3.mp3"></audio>
+  <audio id="sound4" src="sound4.mp3"></audio>
+  <audio id="sound5" src="sound5.mp3"></audio>
+  <audio id="sound6" src="sound6.mp3"></audio>
 
   <script>
     // Function to play sound1
@@ -37,10 +41,37 @@
       sound.play();
     }
 
+    // Function to play sound3
+    function playSound3() {
+      var sound = document.getElementById("sound3");
+      sound.play();
+    }
+
+    // Function to play sound4
+    function playSound4() {
+      var sound = document.getElementById("sound4");
+      sound.play();
+    }
+
+    // Function to play sound5
+    function playSound5() {
+      var sound = document.getElementById("sound5");
+      sound.play();
+    }
+
+    // Function to play sound6
+    function playSound6() {
+      var sound = document.getElementById("sound6");
+      sound.play();
+    }
+
     // Add click event listeners to images
     document.getElementById("pic1").addEventListener("click", playSound1);
     document.getElementById("pic2").addEventListener("click", playSound2);
-    // You can add similar event listeners for other images as well
+    document.getElementById("pic3").addEventListener("click", playSound3);
+    document.getElementById("pic4").addEventListener("click", playSound4);
+    document.getElementById("pic5").addEventListener("click", playSound5);
+    document.getElementById("pic6").addEventListener("click", playSound6);
   </script>
 </body>
 </html>
