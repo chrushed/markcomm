@@ -5,17 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Responsive Images Example</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    /* CSS to create three columns */
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .column {
+      flex: 33.33%;
+      padding: 5px;
+    }
+    .responsive-image {
+      width: 100%;
+      height: auto;
+    }
+  </style>
 </head>
 <body>
   <div class="container" background="black">
     <div class="column">
       <img src="pic1.jpg" alt="Pic 1" class="responsive-image" id="pic1">
-      <img src="pic2.jpeg" alt="Pic 2" class="responsive-image" id="pic2">
-      <img src="pic3.jpeg" alt="Pic 3" class="responsive-image" id="pic3">
+      <img src="pic4.jpeg" alt="Pic 4" class="responsive-image" id="pic4">
     </div>
     <div class="column">
-      <img src="pic4.jpeg" alt="Pic 4" class="responsive-image" id="pic4">
+      <img src="pic2.jpeg" alt="Pic 2" class="responsive-image" id="pic2">
       <img src="pic5.jpeg" alt="Pic 5" class="responsive-image" id="pic5">
+    </div>
+    <div class="column">
+      <img src="pic3.jpeg" alt="Pic 3" class="responsive-image" id="pic3">
       <img src="pic6.jpeg" alt="Pic 6" class="responsive-image" id="pic6">
     </div>
   </div>
