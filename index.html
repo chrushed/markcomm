@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
+  <div class="container" background="black">
     <div class="column">
       <img src="pic1.jpg" alt="Pic 1" class="responsive-image" id="pic1">
       <img src="pic2.jpeg" alt="Pic 2" class="responsive-image" id="pic2">
@@ -19,5 +19,28 @@
       <img src="pic6.jpeg" alt="Pic 6" class="responsive-image" id="pic6">
     </div>
   </div>
+
+  <!-- Include your sound files -->
+  <audio id="sound1" src="sound1.mp3"></audio>
+  <audio id="sound2" src="sound2.mp3"></audio>
+
+  <script>
+    // Function to play sound1
+    function playSound1() {
+      var sound = document.getElementById("sound1");
+      sound.play();
+    }
+
+    // Function to play sound2
+    function playSound2() {
+      var sound = document.getElementById("sound2");
+      sound.play();
+    }
+
+    // Add click event listeners to images
+    document.getElementById("pic1").addEventListener("click", playSound1);
+    document.getElementById("pic2").addEventListener("click", playSound2);
+    // You can add similar event listeners for other images as well
+  </script>
 </body>
 </html>
